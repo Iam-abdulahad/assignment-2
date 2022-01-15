@@ -3,7 +3,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-family: 'PT Sans Narrow', sans-serif;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    background-color: lightsteelblue;
+    background-color: white;
 }
 section{
     width: 1100px;
@@ -20,6 +20,7 @@ section{
     padding-bottom: 30px;
 }
 .head-detail{
+    font-family: poppins;
     width: 582px;
     height: 270px;
     padding-left: 25px;
@@ -64,6 +65,7 @@ section{
 .logos{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* -----------------------
@@ -139,5 +141,124 @@ article p{
     font-family: poppins;
     color: #E02C6D;
     text-align: right;
-    display:inline ;
+    display:grid ;
+}
+/*---------------- 
+Additional Part 
+--------------------*/
+.additional{
+    width: 1047px;
+    height: 270px;
+    background-color: whitesmoke;
+    margin: auto;
+    
+}
+.our-shop{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: stretch;
+    padding-bottom: 20px;
+}
+.shop-img img{
+    width: 404px;
+    height: 270px;
+}
+.shop-info{
+    font-family: poppins;
+}
+/* ----------------
+footer 
+-------------------*/
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h2, p{
+    color: whitesmoke;
+}
+.soicial-icon{
+    color: whitesmoke;
+    font-size: 15px;
+    height: 10px;
+}
+..soicial-icon>fab{
+    display:block;
+}
+
+/* Responsive for Mobile */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        width: 100%;
+      }
+      .head-part{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+      }
+      ..head-detail{
+          width: 100%;
+          height: 300px;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+      }
+      .head-image img{
+          width: 100%;
+          margin-top: auto;
+          height: auto;
+      }
+      .popular-collection{
+          width: 100%;
+      }
+      .my-products{
+        width: 100%;
+          grid-template-columns: repeat(1, 1fr);
+          justify-items: center;
+      }
+      .additional{
+          
+        grid-template-columns: repeat(1, 1fr);
+        grid-column: auto;
+      }
+      .footer{
+          justify-content: center;
+          align-items: center;
+      }
+}
+
+/*----------------------- 
+Responsive For Tablate 
+-------------------------*/
+@media only screen and (min-width: 600px ) and (max-width: 1024px){
+    ::selection{
+        width: 100%;
+    }
+
+  .head-part{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      column-gap: 20px;
+      
+  }
+  .head-detail{
+      display: block;
+      justify-content: center;
+  }
+  .popular-collection{
+      width: 100%;
+  }
+  .my-products{
+
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .additional{
+      width: 100%;
+      flex-direction: column;
+  }
 }
