@@ -221,6 +221,10 @@ footer h2, p{
           justify-items: center;
       }
       .additional{
+          width: 100%;
+          height: fit-content;
+      }
+      .our-shop{
           
         grid-template-columns: repeat(1, 1fr);
         grid-column: auto;
